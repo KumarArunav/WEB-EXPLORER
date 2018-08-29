@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_browser1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hp.exploretheweb.Browser1">
+
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:weightSum="1.0"
+        android:orientation="horizontal"
+        android:layout_weight="0.10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="Enter the Url"
+            android:id="@+id/edittext"
+            android:layout_width="234dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonGo"
+            android:text="GO"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="MIC"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonMic" />
+
+
+    </LinearLayout>
+    <WebView
+        android:layout_weight="0.8"
+        android:id="@+id/web1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </WebView>
+    <LinearLayout
+        android:id="@+id/l3"
+        android:weightSum="1.0"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Forward"
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="Backward"
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Reload"
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Clear"
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
